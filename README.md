@@ -1,5 +1,5 @@
 # HackerRank_SQL
-#### Làm các bài tập phần SQL trên HackerRank [HackerRand](https://www.hackerrank.com/domains/sql)
+#### Làm các bài tập phần SQL trên trang web: [HackerRand](https://www.hackerrank.com/domains/sql) phần Practice
 #### Server Language: MS SQL Server
 #### Số phần: chia làm 4 phần
 ## Phần I: Basic SELECT
