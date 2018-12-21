@@ -3,7 +3,7 @@
 #### Server Language: MS SQL Server
 #### Part Numbers: chia làm 4 phần
 ## Phần I: Basic SELECT (17 lessons)
-1. Revising the Select Query I
+1. [Revising the Select Query I](https://www.hackerrank.com/challenges/revising-the-select-query/problem)
 2. Revising the Select Query II
 3. Select All
 4. 
