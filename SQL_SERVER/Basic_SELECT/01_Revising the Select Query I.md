@@ -9,3 +9,10 @@ The **CITY** table is described as follows:
 ## CODE:
 
     SELECT * FROM CITY WHERE COUNTRYCODE = 'USA' AND Population>100000;
+    
+
+## DISCUSS:
+### Yêu cầu của bài: truy vấn tất cả cột đối với tất cả thành phố của American trong CITY với dân số lớn hơn 100000. Mã CountryCode của American là USA.
+- **Tư duy:** 
+- **Phân tích:**
+- **Kiến thức áp dụng:**
