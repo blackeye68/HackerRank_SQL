@@ -8,60 +8,60 @@
 #### - My Website: [MY CV](https://ducnashare.github.io/)
 ## Phần I: Basic SELECT (17 lessons)
 1. [Revising the Select Query I](https://www.hackerrank.com/challenges/revising-the-select-query/problem)
-2. Revising the Select Query II
-3. Select All
-4. 
-5.
-6.
-7.
-8.
-9.
-10.
-11.
-12.
-13.
-14.
-15.
-16.
-17.
+2. [Revising the Select Query II](https://www.hackerrank.com/challenges/revising-the-select-query-2/problem)
+3. [Select All]
+4. [Select By ID]
+5. [Japanese Cities' Attributes] ()
+6. [] ()
+7. [] ()
+8. [] ()
+9. [] ()
+10. [] ()
+11. [] ()
+12. [] ()
+13. [] ()
+14. [] ()
+15. [] ()
+16. [] ()
+17. [] ()
 ## Phần II: Advanced SELECT (8 lessons)
-1. 
-2. 
-3.
-4.
-5.
-6.
-7.
-8.
+1. [] ()
+2. [] ()
+3. [] ()
+4. [] ()
+5. [] ()
+6. [] ()
+7. [] ()
+8. [] ()
 ## Phần III: Aggregation (17 lessons)
-1. 
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-11.
-12.
-13.
-14.
-15.
-16.
-17.
+1. [] ()
+2. [] ()
+3. [] ()
+4. [] ()
+5. [] ()
+6. [] ()
+7. [] ()
+8. [] ()
+9. [] ()
+10. [] ()
+11. [] ()
+12. [] ()
+13. [] ()
+14. [] ()
+15. [] ()
+16. [] ()
+17. [] ()
 ## Phần IV: JOIN (13 lessons)
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-11.
-12.
-13.
+1. [] ()
+2. [] ()
+3. [] ()
+4. [] ()
+5. [] ()
+6. [] ()
+7. [] ()
+8. [] ()
+9. [] ()
+10. [] ()
+11. [] ()
+12. [] ()
+13. [] ()
