@@ -35,3 +35,7 @@ Expected Output
 - **Tư duy:** 
 - **Phân tích:**
 - **Kiến thức áp dụng:**
+- **Lưu ý:**
+- Cần thêm ; ở cuối để dòng code có hiệu quả
+- Đối với chuỗi trong Code (như trên là USA) phải đặt giữa '' hoặc "" đều được.
+- * đại diện cho tìm tất cả các column
