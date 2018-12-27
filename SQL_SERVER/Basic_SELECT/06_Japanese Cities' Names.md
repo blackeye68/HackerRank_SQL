@@ -15,11 +15,11 @@
 ## Output:
 Your Output (stdout)
 
-    **Neyagawa**
-    **Ageo**
-    **Sayama** 
-    **Omuta** 
-    **Tokuyama** 
+    Neyagawa
+    Ageo
+    Sayama
+    Omuta 
+    Tokuyama
     
 
 ## DISCUSS:
