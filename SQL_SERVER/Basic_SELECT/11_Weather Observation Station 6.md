@@ -1,42 +1,94 @@
 ## Problem
- Query all columns for all American cities in CITY with populations larger than 100000. The CountryCode for America is USA.
+
+ Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from **STATION**. Your result cannot contain duplicates.
+ 
  **Input Format:**
+ 
+ The **STATION** table is described as follows:
 
-![](https://s3.amazonaws.com/hr-challenge-images/8137/1449729804-f21d187d0f-CITY.jpg)
+![](https://s3.amazonaws.com/hr-challenge-images/9336/1449345840-5f0a551030-Station.jpg)
 
-The **CITY** table is described as follows:
+where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 ## CODE:
 
-    SELECT * FROM CITY WHERE COUNTRYCODE = 'USA' AND Population>100000;
-    
-    SELECT * FROM CITY WHERE POPULATION > 100000 AND COUNTRYCODE = 'USA';
+    SELECT DISTINCT(CITY) FROM STATION WHERE CITY LIKE 'A%' OR CITY LIKE 'E%' OR CITY LIKE 'I%' OR CITY LIKE 'O%' 
+    OR CITY LIKE 'U%' ORDER BY CITY ASC;
     
 ## Output:
 Your Output (stdout)
 
-    3878 Scottsdale USA Arizona 202705 
-    3965 Corona USA California 124966 
-    3973 Concord USA California 121780 
-    3977 Cedar Rapids USA Iowa 120758 
-    3982 Coral Springs USA Florida 117549
+    Acme 
+    Addison 
+    Agency 
+    Aguanga 
+    Alanson 
+    Alba 
+    Albany 
+    Albion 
+    Algonac 
+    Aliso Viejo 
+    Allerton 
+    Alpine 
+    Alton 
+    Amazonia 
+    Amo 
+    Andersonville 
+    Andover 
+    Anthony 
+    Archie 
+    Arispe 
+    Arkadelphia 
+    Arlington 
+    Arrowsmith 
+    Athens 
+    Atlantic Mine 
+    Auburn 
+    East China 
+    East Haddam 
+    East Irvine 
+    Eastlake 
+    Edgewater 
+    Effingham 
+    Eleele 
+    Elkton 
+    Elm Grove 
+    Emmett 
+    Equality 
+    Eriline 
+    Ermine 
+    Eros 
+    Eskridge 
+    Esmond 
+    Eufaula 
+    Eureka Springs 
+    Eustis 
+    Everton 
+    Irvington 
+    Oakfield 
+    Oconee 
+    Odin 
+    Ojai 
+    Olmitz 
+    Onaway 
+    Orange City 
+    Orange Park 
+    Osage City 
+    Osborne 
+    Oshtemo 
+    Ottertail 
+    Ozona 
+    Udall 
+    Ukiah 
+    Union Star 
+    Upperco 
+    Urbana 
     
-Expected Output
-
-    3878 Scottsdale USA Arizona 202705 
-    3965 Corona USA California 124966 
-    3973 Concord USA California 121780 
-    3977 Cedar Rapids USA Iowa 120758 
-    3982 Coral Springs USA Florida 117549
-    
-
 ## DISCUSS:
-### Yêu cầu của bài: truy vấn tất cả cột đối với tất cả thành phố của American trong CITY với dân số lớn hơn 100000. Mã CountryCode của American là USA.
+### Yêu cầu của bài: 
 - **Tư duy:** 
 - **Phân tích:**
 - **Kiến thức áp dụng:**
 - **Lưu ý:**
-- Cần thêm ; ở cuối để dòng code có hiệu quả
-- Đối với chuỗi trong Code (như trên là USA) phải đặt giữa '' hoặc "" đều được.
-- * đại diện cho tìm tất cả các column
+
 
