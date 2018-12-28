@@ -1,37 +1,58 @@
 ## Problem
- Query all columns for all American cities in CITY with populations larger than 100000. The CountryCode for America is USA.
+ 
+ Query the list of **CITY** names from **STATION** which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
+ 
  **Input Format:**
+ 
+ The **STATION** table is described as follows:
 
-![](https://s3.amazonaws.com/hr-challenge-images/8137/1449729804-f21d187d0f-CITY.jpg)
+![](https://s3.amazonaws.com/hr-challenge-images/9336/1449345840-5f0a551030-Station.jpg)
 
-The **CITY** table is described as follows:
+where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 ## CODE:
 
-    SELECT * FROM CITY WHERE COUNTRYCODE = 'USA' AND Population>100000;
-    
-    SELECT * FROM CITY WHERE POPULATION > 100000 AND COUNTRYCODE = 'USA';
+    SELECT DISTINCT CITY 
+    FROM STATION 
+    WHERE (CITY LIKE 'A%' OR CITY LIKE 'E%' OR CITY LIKE 'I%' OR CITY LIKE 'O%' OR CITY LIKE 'U%') 
+    AND (CITY LIKE '%a' OR CITY LIKE '%e' OR CITY LIKE '%i' OR CITY LIKE '%o' OR CITY LIKE '%u') 
+    ORDER BY CITY;
     
 ## Output:
 Your Output (stdout)
 
-    3878 Scottsdale USA Arizona 202705 
-    3965 Corona USA California 124966 
-    3973 Concord USA California 121780 
-    3977 Cedar Rapids USA Iowa 120758 
-    3982 Coral Springs USA Florida 117549
-    
-Expected Output
-
-    3878 Scottsdale USA Arizona 202705 
-    3965 Corona USA California 124966 
-    3973 Concord USA California 121780 
-    3977 Cedar Rapids USA Iowa 120758 
-    3982 Coral Springs USA Florida 117549
+    Acme 
+    Aguanga 
+    Alba 
+    Aliso Viejo 
+    Alpine 
+    Amazonia 
+    Amo 
+    Andersonville 
+    Archie 
+    Arispe 
+    Arkadelphia 
+    Atlantic Mine 
+    East China 
+    East Irvine 
+    Eastlake 
+    Eleele 
+    Elm Grove 
+    Eriline 
+    Ermine 
+    Eskridge 
+    Eufaula 
+    Oconee 
+    Ojai 
+    Osborne 
+    Oshtemo 
+    Ozona 
+    Upperco 
+    Urbana 
     
 
 ## DISCUSS:
-### Yêu cầu của bài: truy vấn tất cả cột đối với tất cả thành phố của American trong CITY với dân số lớn hơn 100000. Mã CountryCode của American là USA.
+### Yêu cầu của bài: 
 - **Tư duy:** 
 - **Phân tích:**
 - **Kiến thức áp dụng:**
