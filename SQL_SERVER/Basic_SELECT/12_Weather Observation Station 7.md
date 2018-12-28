@@ -1,42 +1,179 @@
 ## Problem
- Query all columns for all American cities in CITY with populations larger than 100000. The CountryCode for America is USA.
+
+ Query the list of **CITY** names ending with vowels (a, e, i, o, u) from **STATION**. Your result cannot contain duplicates.
+ 
  **Input Format:**
+ 
+ The **STATION** table is described as follows:
 
-![](https://s3.amazonaws.com/hr-challenge-images/8137/1449729804-f21d187d0f-CITY.jpg)
+![](https://s3.amazonaws.com/hr-challenge-images/9336/1449345840-5f0a551030-Station.jpg)
 
-The **CITY** table is described as follows:
+where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 ## CODE:
 
-    SELECT * FROM CITY WHERE COUNTRYCODE = 'USA' AND Population>100000;
-    
-    SELECT * FROM CITY WHERE POPULATION > 100000 AND COUNTRYCODE = 'USA';
+    SELECT DISTINCT(CITY) FROM STATION WHERE CITY LIKE '%a' OR CITY LIKE '%e' OR CITY LIKE '%i' OR CITY LIKE '%o' 
+    OR CITY LIKE '%u';
     
 ## Output:
 Your Output (stdout)
 
-    3878 Scottsdale USA Arizona 202705 
-    3965 Corona USA California 124966 
-    3973 Concord USA California 121780 
-    3977 Cedar Rapids USA Iowa 120758 
-    3982 Coral Springs USA Florida 117549
+    Acme 
+    Aguanga 
+    Alba 
+    Aliso Viejo 
+    Alpine 
+    Amazonia 
+    Amo 
+    Andersonville 
+    Archie 
+    Arispe 
+    Arkadelphia 
+    Atlantic Mine 
+    Baileyville 
+    Bainbridge 
+    Barrigada 
+    Baton Rouge 
+    Bayville 
+    Bellevue 
+    Bentonville 
+    Bertha 
+    Biggsville 
+    Bono 
+    Brownsdale 
+    Cahone 
+    Calpine 
+    Cape Girardeau 
+    Cascade 
+    Casco 
+    Caseville 
+    Chelsea 
+    Chilhowee 
+    Chokio 
+    Clarkdale 
+    Clio 
+    Corriganville 
+    Crane Lake 
+    Crouseville 
+    Cuba 
+    Curdsville 
+    Dale 
+    Daleville 
+    De Tour Village 
+    Delano 
+    Delta 
+    Dixie 
+    Dorrance 
+    Dundee 
+    Dupo 
+    East China 
+    East Irvine 
+    Eastlake 
+    Eleele 
+    Elm Grove 
+    Eriline 
+    Ermine 
+    Eskridge 
+    Eufaula 
+    Fort Meade 
+    Glencoe 
+    Gowrie 
+    Grand Terrace 
+    Grandville 
+    Grapevine 
+    Grayslake 
+    Greenville 
+    Gretna 
+    Grosse Pointe 
+    Gustine 
+    Hagatna 
+    Hayesville 
+    Hayneville 
+    Hesperia 
+    Hillside 
+    Honolulu 
+    Hope 
+    Hopkinsville 
+    Howard Lake 
+    Jerome 
+    Kanorado 
+    Kirksville 
+    Lakeville 
+    Lakota 
+    Leakesville 
+    Lee 
+    Lena 
+    Lismore 
+    Losantville 
+    Lottie 
+    Lydia 
+    Lynnville 
+    Madisonville 
+    Magnolia 
+    Marysville 
+    Mascotte 
+    Mid Florida 
+    Middleboro 
+    Milledgeville 
+    Millville 
+    Monona 
+    Monroe 
+    Montrose 
+    Morenci 
+    Mosca 
+    Netawaka 
+    Notasulga 
+    Oconee 
+    Ojai 
+    Osborne 
+    Oshtemo 
+    Ozona 
+    Palatka 
+    Pawnee 
+    Pelahatchie 
+    Pheba 
+    Pico Rivera 
+    Pleasant Grove 
+    Pomona 
+    Ravenna 
+    Raymondville 
+    Regina 
+    Renville 
+    Rio Oso 
+    Robertsdale 
+    Rosie 
+    Saint Elmo 
+    Samantha 
+    Shasta 
+    Skanee 
+    South El Monte 
+    Springerville 
+    Susanville 
+    Tarzana 
+    Tennessee 
+    Tina 
+    Upperco 
+    Urbana 
+    Verona 
+    Waipahu 
+    Waresboro 
+    Weldona 
+    West Grove 
+    Westphalia 
+    Wickliffe 
+    Wildie 
+    Woodsboro 
+    Yalaha 
+    Yellow Pine 
+    Yellville 
+    Yuma 
+    Zionsville 
     
-Expected Output
-
-    3878 Scottsdale USA Arizona 202705 
-    3965 Corona USA California 124966 
-    3973 Concord USA California 121780 
-    3977 Cedar Rapids USA Iowa 120758 
-    3982 Coral Springs USA Florida 117549
-    
-
 ## DISCUSS:
-### Yêu cầu của bài: truy vấn tất cả cột đối với tất cả thành phố của American trong CITY với dân số lớn hơn 100000. Mã CountryCode của American là USA.
+### Yêu cầu của bài: 
 - **Tư duy:** 
 - **Phân tích:**
 - **Kiến thức áp dụng:**
 - **Lưu ý:**
-- Cần thêm ; ở cuối để dòng code có hiệu quả
-- Đối với chuỗi trong Code (như trên là USA) phải đặt giữa '' hoặc "" đều được.
-- * đại diện cho tìm tất cả các column
+
 
