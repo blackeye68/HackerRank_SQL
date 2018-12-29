@@ -17,7 +17,7 @@ The **CITY** table is described as follows:
 
 Your Output (stdout)
 
-    **454250    
+    454250    
 
 ## DISCUSS:
 ### Yêu cầu của bài: 
