@@ -1,36 +1,55 @@
 ## Problem
 
- Query all columns for all American cities in CITY with populations larger than 100000. The CountryCode for America is USA.
+ Query the Name of any student in **STUDENTS** who scored higher than _**75**_ Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
  
  **Input Format:**
  
- The **CITY** table is described as follows:
+ The **STUDENTS** table is described as follows: 
 
-![](https://s3.amazonaws.com/hr-challenge-images/8137/1449729804-f21d187d0f-CITY.jpg)
+![](https://s3.amazonaws.com/hr-challenge-images/12896/1443815243-94b941f556-1.png)
+
+The Name column only contains uppercase (A-Z) and lowercase (a-z) letters.
+
+**Sample Input**
+
+![](https://s3.amazonaws.com/hr-challenge-images/12896/1443815209-cf4b260993-2.png)
+
+**Sample Output**
+
+    Ashley
+    Julia
+    Belvet
+    
+**Explanation**
+
+Only Ashley, Julia, and Belvet have Marks > **_75_** . If you look at the last three characters of each of their names, there are no duplicates and 'ley' < 'lia' < 'vet'.
 
 ## CODE:
 
-    SELECT * FROM CITY WHERE COUNTRYCODE = 'USA' AND Population>100000;
-    
-    SELECT * FROM CITY WHERE POPULATION > 100000 AND COUNTRYCODE = 'USA';
+    SELECT NAME FROM STUDENTS
+    WHERE MARKS > 75
+    ORDER BY RIGHT(NAME,3), ID;
     
 ## Output:
 Your Output (stdout)
 
-    3878 Scottsdale USA Arizona 202705 
-    3965 Corona USA California 124966 
-    3973 Concord USA California 121780 
-    3977 Cedar Rapids USA Iowa 120758 
-    3982 Coral Springs USA Florida 117549
-    
-Expected Output
-
-    3878 Scottsdale USA Arizona 202705 
-    3965 Corona USA California 124966 
-    3973 Concord USA California 121780 
-    3977 Cedar Rapids USA Iowa 120758 
-    3982 Coral Springs USA Florida 117549
-    
+    Stuart 
+    Kristeen 
+    Christene 
+    Amina 
+    Aamina 
+    Priya 
+    Heraldo 
+    Scarlet 
+    Julia 
+    Salma 
+    Britney 
+    Priyanka 
+    Samantha 
+    Vivek 
+    Belvet 
+    Devil 
+    Evil   
 
 ## DISCUSS:
 ### Yêu cầu của bài: 
