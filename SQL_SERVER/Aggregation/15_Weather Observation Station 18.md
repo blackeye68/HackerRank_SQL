@@ -7,7 +7,7 @@ Consider _P1(a,b)_ and _P2(b,d)_ to be two points on a 2D plane.
 * _c_ happens to equal the maximum value in Northern Latitude (LAT_N in **STATION**).
 * _d_ happens to equal the maximum value in Western Longitude (LONG_W in **STATION**).
 
-Query the [Manhattan Distance](https://xlinux.nist.gov/dads/HTML/manhattanDistance.html) between points  and  and round it to a scale of  decimal places.
+Query the [Manhattan Distance](https://en.wiktionary.org/wiki/Manhattan_distance) between points  and  and round it to a scale of  decimal places.
 
 **Input Format**
 
