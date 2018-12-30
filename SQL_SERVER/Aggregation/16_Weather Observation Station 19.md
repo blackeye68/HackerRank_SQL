@@ -2,7 +2,7 @@
 
 Consider _P1(a,c)_ and _P2(b,d)_ to be two points on a 2D plane where _(a,b)_ are the respective minimum and maximum values of Northern Latitude (LAT_N) and _(c,d)_ are the respective minimum and maximum values of Western Longitude (LONG_W) in STATION.
 
-Query the Euclidean Distance between points  and _P1_ and _P2_ format your answer to display _4_ decimal digits.
+Query the [Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance) between points  and _P1_ and _P2_ format your answer to display _4_ decimal digits.
 
 **Input Format**
 
