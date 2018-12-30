@@ -1,8 +1,10 @@
+## Problem
+
 Samantha interviews many candidates from different colleges using coding challenges and contests. Write a query to print the contest_id, hacker_id, name, and the sums of total_submissions, total_accepted_submissions, total_views, and total_unique_views for each contest sorted by contest_id. Exclude the contest from the result if all four sums are .
 
-Note: A specific contest can be used to screen candidates at more than one college, but each college only holds  screening contest.
+**Note**: A specific contest can be used to screen candidates at more than one college, but each college only holds  screening contest.
 
-Input Format
+**Input Format**
 
 The following tables hold interview data:
 
@@ -38,3 +40,24 @@ Sum of total views
 Sum of total unique views 
 
 Similarly, we can find the sums for contests  and .
+
+## CODE:
+
+    SELECT
+    SUM(city.population)
+    FROM city
+    JOIN country
+    ON city.countrycode = country.code
+    WHERE continent = 'Asia';
+    
+## Output:
+Your Output (stdout)
+
+    27028484  
+
+## DISCUSS:
+### Yêu cầu của bài: 
+- **Tư duy:** 
+- **Phân tích:**
+- **Kiến thức áp dụng:**
+- **Lưu ý:**
