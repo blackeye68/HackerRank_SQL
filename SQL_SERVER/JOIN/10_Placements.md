@@ -1,12 +1,16 @@
 You are given three tables: Students, Friends and Packages. Students contains two columns: ID and Name. Friends contains two columns: ID and Friend_ID (ID of the ONLY best friend). Packages contains two columns: ID and Salary (offered salary in $ thousands per month).
 
-
+![](https://s3.amazonaws.com/hr-challenge-images/12895/1443820186-2a9b4939a8-1.png)
 
 Write a query to output the names of those students whose best friends got offered a higher salary than them. Names must be ordered by the salary amount offered to the best friends. It is guaranteed that no two students got same salary offer.
 
-Sample Input
-
+**Sample Input**
  
+ ![](https://s3.amazonaws.com/hr-challenge-images/12895/1443820079-9bd1e231b1-2_1.png)
+ 
+ ![](https://s3.amazonaws.com/hr-challenge-images/12895/1443820100-adb691b2f5-2_2.png)
+ 
+
 
 Sample Output
 
