@@ -53,8 +53,6 @@ On March 05, 2016 hackers **_20703_**, **_36396_**, **_38289_** and **_62529_** 
 
 On March 06, 2016 only **_20703_** made submission, so there is only **_1_** unique hacker who made at least one submission each day. **_20703_** made **_1_** submission and name of the hacker is Angela.
 
-&‌equiv;
-
 ## CODE:
 
     select table2.submission_date, table2.Unique_Count, table1.hacker_id , hackers.name 
