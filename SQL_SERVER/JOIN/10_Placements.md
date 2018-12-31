@@ -10,28 +10,58 @@ Write a query to output the names of those students whose best friends got offer
  
  ![](https://s3.amazonaws.com/hr-challenge-images/12895/1443820100-adb691b2f5-2_2.png)
  
+**Sample Output**
 
+    Samantha
+    Julia
+    Scarlet
 
-Sample Output
-
-Samantha
-Julia
-Scarlet
-
-Explanation
+**Explanation**
 
 See the following table:
 
-
+![](https://s3.amazonaws.com/hr-challenge-images/12895/1443819966-c37c146d27-3.png)
 
 Now,
 
-Samantha's best friend got offered a higher salary than her at 11.55
-Julia's best friend got offered a higher salary than her at 12.12
-Scarlet's best friend got offered a higher salary than her at 15.2
-Ashley's best friend did NOT get offered a higher salary than her
+* Samantha's best friend got offered a higher salary than her at 11.55
+* Julia's best friend got offered a higher salary than her at 12.12
+* Scarlet's best friend got offered a higher salary than her at 15.2
+* Ashley's best friend did NOT get offered a higher salary than her
+
 The name output, when ordered by the salary offered to their friends, will be:
 
-Samantha
-Julia
-Scarlet
+* Samantha
+* Julia
+* Scarlet
+
+## CODE:
+
+    SELECT S.Name
+    FROM Students S WITH (NOLOCK)
+    INNER JOIN Friends F WITH (NOLOCK) ON S.ID = F.ID
+    INNER JOIN Packages P WITH (NOLOCK) ON P.ID = S.ID
+    INNER JOIN Packages PF WITH (NOLOCK) ON PF.ID = F.Friend_ID AND P.Salary < PF.Salary
+    ORDER BY PF.Salary;
+    
+## Output:
+Your Output (stdout)
+
+    Stuart 
+    Priyanka 
+    Paige 
+    Jane 
+    Julia 
+    Belvet 
+    Amina 
+    Kristeen 
+    Scarlet 
+    Priya 
+    Meera   
+
+## DISCUSS:
+### Yêu cầu của bài: 
+- **Tư duy:** 
+- **Phân tích:**
+- **Kiến thức áp dụng:**
+- **Lưu ý:**
