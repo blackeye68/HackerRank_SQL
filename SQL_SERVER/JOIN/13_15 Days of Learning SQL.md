@@ -1,44 +1,59 @@
 ## Problem
 
-Julia conducted a  days of learning SQL contest. The start date of the contest was March 01, 2016 and the end date was March 15, 2016.
+Julia conducted a _15_ days of learning SQL contest. The start date of the contest was March 01, 2016 and the end date was March 15, 2016.
 
-Write a query to print total number of unique hackers who made at least  submission each day (starting on the first day of the contest), and find the hacker_id and name of the hacker who made maximum number of submissions each day. If more than one such hacker has a maximum number of submissions, print the lowest hacker_id. The query should print this information for each day of the contest, sorted by the date.
+Write a query to print total number of unique hackers who made at least _1_ submission each day (starting on the first day of the contest), and find the hacker_id and name of the hacker who made maximum number of submissions each day. If more than one such hacker has a maximum number of submissions, print the lowest hacker_id. The query should print this information for each day of the contest, sorted by the date.
+
+---
 
 **Input Format**
 
 The following tables hold contest data:
 
-Hackers: The hacker_id is the id of the hacker, and name is the name of the hacker.
+* Hackers: The hacker_id is the id of the hacker, and name is the name of the hacker.
 
-Submissions: The submission_date is the date of the submission, submission_id is the id of the submission, hacker_id is the id of the hacker who made the submission, and score is the score of the submission. 
+![](https://s3.amazonaws.com/hr-challenge-images/19597/1458511164-12adec3b8b-ScreenShot2016-03-21at3.26.47AM.png)
+
+* Submissions: The submission_date is the date of the submission, submission_id is the id of the submission, hacker_id is the id of the hacker who made the submission, and score is the score of the submission. 
+
+![](https://s3.amazonaws.com/hr-challenge-images/19597/1458511251-0b534030b9-ScreenShot2016-03-21at3.26.56AM.png)
 
 **Sample Input**
 
 For the following sample input, assume that the end date of the contest was March 06, 2016.
 
-Hackers Table:  Submissions Table: 
+Hackers Table:
+
+![](https://s3.amazonaws.com/hr-challenge-images/19597/1458511957-814a2c7bf2-ScreenShot2016-03-21at3.27.06AM.png)
+
+Submissions Table: 
+
+![](https://s3.amazonaws.com/hr-challenge-images/19597/1458512015-ff6a708164-ScreenShot2016-03-21at3.27.21AM.png)
 
 **Sample Output**
 
-2016-03-01 4 20703 Angela
-2016-03-02 2 79722 Michael
-2016-03-03 2 20703 Angela
-2016-03-04 2 20703 Angela
-2016-03-05 1 36396 Frank
-2016-03-06 1 20703 Angela
-Explanation
+    2016-03-01 4 20703 Angela
+    2016-03-02 2 79722 Michael
+    2016-03-03 2 20703 Angela
+    2016-03-04 2 20703 Angela
+    2016-03-05 1 36396 Frank
+    2016-03-06 1 20703 Angela
 
-On March 01, 2016 hackers , , , and  made submissions. There are  unique hackers who made at least one submission each day. As each hacker made one submission,  is considered to be the hacker who made maximum number of submissions on this day. The name of the hacker is Angela.
+**Explanation**
 
-On March 02, 2016 hackers , , and  made submissions. Now  and  were the only ones to submit every day, so there are  unique hackers who made at least one submission each day.  made  submissions, and name of the hacker is Michael.
+On March 01, 2016 hackers **_20703_**, **_36396_** , **_53473_** , and **_79722_** made submissions. There are **_4_** unique hackers who made at least one submission each day. As each hacker made one submission, **_20703_** is considered to be the hacker who made maximum number of submissions on this day. The name of the hacker is Angela.
 
-On March 03, 2016 hackers , , and  made submissions. Now  and  were the only ones, so there are  unique hackers who made at least one submission each day. As each hacker made one submission so  is considered to be the hacker who made maximum number of submissions on this day. The name of the hacker is Angela.
+On March 02, 2016 hackers **_15758_** , **_20703_** , and **_79722_** made submissions. Now **_20703_**  and **_79722_** were the only ones to submit every day, so there are **_2_** unique hackers who made at least one submission each day. **_79722_** made **_2_** submissions, and name of the hacker is Michael.
 
-On March 04, 2016 hackers , , , and  made submissions. Now  and  only submitted each day, so there are  unique hackers who made at least one submission each day. As each hacker made one submission so  is considered to be the hacker who made maximum number of submissions on this day. The name of the hacker is Angela.
+On March 03, 2016 hackers **_20703_**, **_36396_**, **_79722_** and **_15758_** made submissions. Now **_20703_** and **_79722_** were the only ones, so there are **_2_**  unique hackers who made at least one submission each day. As each hacker made one submission so **_20703_** is considered to be the hacker who made maximum number of submissions on this day. The name of the hacker is Angela.
 
-On March 05, 2016 hackers , ,  and  made submissions. Now  only submitted each day, so there is only  unique hacker who made at least one submission each day.  made  submissions and name of the hacker is Frank.
+On March 04, 2016 hackers **_20703_**, **_44065_**, **_53473_**, and **_79722_** made submissions. Now **_20703_** and **_79722_** only submitted each day, so there are **_2_** unique hackers who made at least one submission each day. As each hacker made one submission so **_20703_** is considered to be the hacker who made maximum number of submissions on this day. The name of the hacker is Angela.
 
-On March 06, 2016 only  made submission, so there is only  unique hacker who made at least one submission each day.  made  submission and name of the hacker is Angela.
+On March 05, 2016 hackers **_20703_**, **_36396_**, **_38289_** and **_62529_** made submissions. Now **_20703_** only submitted each day, so there is only **_1_** unique hacker who made at least one submission each day. **_36396_** made **_2_** submissions and name of the hacker is Frank.
+
+On March 06, 2016 only **_20703_** made submission, so there is only **_1_** unique hacker who made at least one submission each day. **_20703_** made **_1_** submission and name of the hacker is Angela.
+
+&‌equiv;
 
 ## CODE:
 
