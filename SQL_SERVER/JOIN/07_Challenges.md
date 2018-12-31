@@ -63,3 +63,76 @@ For Sample Case 1, we can get the following details:
 ![](https://s3.amazonaws.com/hr-challenge-images/19506/1458521836-24039e7523-ScreenShot2016-03-21at6.08.08AM.png)
  
 Students **12299** and **34856** both created  challenges. Because **6** is the maximum number of challenges created, these students are included in the result.
+
+## CODE:
+
+    WITH data
+    AS
+    (
+    SELECT c.hacker_id as id, h.name as name, count(c.hacker_id) as counter
+    FROM Hackers h
+    JOIN Challenges c on c.hacker_id = h.hacker_id
+    GROUP BY c.hacker_id, h.name
+    )
+    SELECT id,name,counter
+    FROM data
+    WHERE
+    counter=(SELECT max(counter) FROM data)
+    OR
+    counter in (SELECT counter FROM data
+    GROUP BY counter
+    HAVING count(counter)=1 )
+    ORDER BY counter desc, id;
+    
+## Output:
+Your Output (stdout)
+
+    5120 Julia 50 
+    18425 Anna 50 
+    20023 Brian 50 
+    33625 Jason 50 
+    41805 Benjamin 50 
+    52462 Nicholas 50 
+    64036 Craig 50 
+    69471 Michelle 50 
+    77173 Mildred 50 
+    94278 Dennis 50 
+    96009 Russell 50 
+    96716 Emily 50 
+    72866 Eugene 42 
+    37068 Patrick 41 
+    12766 Jacqueline 40 
+    86280 Beverly 37 
+    19835 Joyce 36 
+    38316 Walter 35 
+    29483 Jeffrey 34 
+    23428 Arthur 33 
+    95437 George 32 
+    46963 Barbara 31 
+    87524 Norma 30 
+    84085 Johnny 29 
+    39582 Maria 28 
+    65843 Thomas 27 
+    5443 Paul 26 
+    52965 Bobby 25 
+    77105 Diana 24 
+    33787 Susan 23 
+    45855 Clarence 22 
+    33177 Jane 21 
+    7302 Victor 20 
+    54461 Janet 19 
+    42277 Sara 18 
+    99388 Mary 16 
+    31426 Carlos 15 
+    95010 Victor 14 
+    27071 Gerald 10 
+    90267 Edward 9 
+    72609 Bobby 8 
+
+## DISCUSS:
+### Yêu cầu của bài: 
+- **Tư duy:** 
+- **Phân tích:**
+- **Kiến thức áp dụng:**
+- **Lưu ý:**
+
