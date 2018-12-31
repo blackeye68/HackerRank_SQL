@@ -1,4 +1,4 @@
-## Problem :1234:
+## Problem
 
 Harry Potter and his friends are at Ollivander's with Ron, finally replacing Charlie's old broken wand.
 
